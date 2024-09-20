@@ -31,7 +31,6 @@
         color: black !important;
     }
 
-    /* Ensure hover and active styles apply only to the specific nav-link */
     .nav-item .nav-link:hover,
     .nav-item .nav-link.active {
         background-color: #ffd600 !important;
@@ -50,7 +49,8 @@
 </style>
 
 
-<nav class="sidebar sidebar-offcanvas" id="sidebar" style="background-color: #1692e9;">
+
+<nav class="sidebar sidebar-offcanvas h-100" id="sidebar" style="background-color: #1692e9; margin-left:-10px; margin-top:-14px">
     <ul class="nav">
         @php
             $userRole = Auth::check() ? Auth::user()->role : null;
@@ -93,3 +93,4 @@
         @endif
     </ul>
 </nav>
+

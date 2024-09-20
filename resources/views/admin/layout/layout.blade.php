@@ -18,21 +18,15 @@
 
 <body>
     <div class="container-scroller">
-        
-        <!-- partial -->
         @include('admin.partial.navbar')
         <div class="container-fluid page-body-wrapper">
-            <!-- partial:partials/_sidebar.html -->
             @include('admin.partial.sidebar')
-            <!-- partial -->
             <div class="main-panel">
                 <div class="content-wrapper">
                     @yield('content')
                 </div>
             </div>
-            <!-- main-panel ends -->
         </div>
-        <!-- page-body-wrapper ends -->
     </div>
 
 
